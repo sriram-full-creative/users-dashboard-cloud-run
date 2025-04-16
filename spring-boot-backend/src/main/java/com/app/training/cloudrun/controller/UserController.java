@@ -27,7 +27,6 @@ public class UserController {
 
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<UserDto>> getAllUsers() {
-        log.info("Fetching all the users");
         List<UserDto> users = userService.getAllUsers().stream().map(userMapper::toDto).collect(Collectors.toList());
         return ResponseEntity.ok(users);
     }
