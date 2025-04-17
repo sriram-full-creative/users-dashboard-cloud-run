@@ -110,7 +110,7 @@ function App() {
   const [isFirstFetch, setIsFirstFetch] = useState(true); // Track if it's first fetch
 
   // Replace with your actual API endpoint
-  const API_URL = 'http://localhost:8080/api/v1/users';
+  const API_URL = 'http://sriram-spring-boot-backend-linux-amd64-401553303388.us-central1.run.app/api/v1/users';
 
   const fetchData = useCallback(async (forceRefresh = false) => {
     // Check if we have cached data that's less than 60 seconds old
